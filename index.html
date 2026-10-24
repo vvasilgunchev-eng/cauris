@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cauris</title>
+    <style>
+      :root {
+        --bg: #0f172a;
+        --panel: #111827;
+        --primary: #38bdf8;
+        --accent: #34d399;
+        --text: #e5e7eb;
+        --muted: #94a3b8;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, var(--bg), #1e293b);
+        color: var(--text);
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+
+      .card {
+        width: min(90vw, 720px);
+        background: rgba(17, 24, 39, 0.9);
+        border: 1px solid rgba(148, 163, 184, 0.2);
+        border-radius: 20px;
+        padding: 48px 32px;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+        text-align: center;
+      }
+
+      .badge {
+        display: inline-block;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: rgba(56, 189, 248, 0.1);
+        color: var(--primary);
+        border: 1px solid rgba(56, 189, 248, 0.3);
+        font-size: 0.85rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.2rem, 5vw, 4rem);
+        line-height: 1.1;
+      }
+
+      p {
+        color: var(--muted);
+        font-size: 1.05rem;
+        margin: 18px auto 0;
+        max-width: 540px;
+        line-height: 1.7;
+      }
+
+      .actions {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 12px 22px;
+        border-radius: 10px;
+        font-weight: 600;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+      }
+
+      a:hover {
+        transform: translateY(-1px);
+        opacity: 0.95;
+      }
+
+      .primary {
+        background: var(--primary);
+        color: #082f49;
+      }
+
+      .secondary {
+        background: rgba(52, 211, 153, 0.14);
+        color: var(--accent);
+        border: 1px solid rgba(52, 211, 153, 0.25);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <div class="badge">Cauris</div>
+      <h1>Bienvenue sur votre site</h1>
+      <p>
+        Cette page a été ajoutée au dépôt pour qu’elle soit bien visible dans le repo
+        et, si GitHub Pages est activé, accessible en ligne.
+      </p>
+      <div class="actions">
+        <a class="primary" href="https://github.com/vvasilgunchev-eng/cauris">Repo GitHub</a>
+        <a class="secondary" href="https://github.com/vvasilgunchev-eng/cauris/settings/pages">Pages</a>
+      </div>
+    </main>
+  </body>
+</html>
